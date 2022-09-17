@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  background: rgba(161, 52, 52, 0.5);
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  color: white;
+  backdrop-filter: blur(10px);
+  font-size: 1rem;
+  /* font-weight: bold; */
+  background: rgba(62, 33, 160, 0.141);
+  border-radius: 28px;
+  width: 400px;
+  padding: 2rem 1.5rem;
+  /* calculator */
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "display display display display"
+    "ac c perc divide"
+    "btn7 btn8 btn9 multi"
+    "btn4 btn5 btn6 btnsub"
+    "btn1 btn2 btn3 plus"
+    "btn0 btn0 btndot equal";
+}
+
+.calculator div {
+  background: rgba(128, 128, 128, 0.349);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* padding */
+  margin: 5px;
+}
+
+.calculator .display {
+  grid-area: display;
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  font-family: "Familjen Grotesk", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  background: white;
+  border-radius: 2px;
+}
+
+.glass {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(to right, rgb(160, 181, 45), rgb(254, 23, 23));
+  position: relative;
+  left: 50px;
+  top: 200px;
+}
+
+.btn-ac {
+  grid-area: ac;
+}
+
+.btn-c {
+  grid-area: c;
+}
+
+.bt-perc {
+  grid-area: perc;
+}
+
+.btn-divide {
+  grid-area: divide;
+}
+
+.btn-7 {
+  grid-area: btn7;
+}
+
+.btn-8 {
+  grid-area: btn8;
+}
+
+.btn-9 {
+  grid-area: btn9;
+}
+
+.btn-multi {
+  grid-area: multi;
+}
+
+.btn-4 {
+  grid-area: btn4;
+}
+
+.btn-5 {
+  grid-area: btn5;
+}
+
+.btn-6 {
+  grid-area: btn6;
+}
+
+.btn-sub {
+  grid-area: btnsub;
+}
+
+.btn-1 {
+  grid-area: btn1;
+}
+
+.btn-2 {
+  grid-area: btn2;
+}
+
+.btn-3 {
+  grid-area: btn3;
+}
+
+.btn-plus {
+  grid-area: plus;
+}
+
+.btn-0 {
+  grid-area: btn0;
+}
+
+.btn-dot {
+  grid-area: btndot;
+}
+
+.btn-equal {
+  grid-area: equal;
+}

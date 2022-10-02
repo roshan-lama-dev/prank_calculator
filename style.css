@@ -45,6 +45,8 @@ body {
 
   /* padding */
   margin: 5px;
+
+  cursor: pointer;
 }
 
 .calculator .display {
@@ -57,6 +59,8 @@ body {
   font-family: "Orbitron", sans-serif;
   background: white;
   border-radius: 2px;
+  cursor: auto;
+  overflow: hidden;
 }
 
 .glass {
@@ -143,4 +147,23 @@ body {
 
 .btn-equal {
   grid-area: equal;
+}
+
+.prank {
+  animation: shake 0.5s ease-in;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(10px);
+  }
+  50% {
+    transform: translate(-10px);
+  }
+  75% {
+    transform: translate(10px);
+  }
+  100% {
+    transform: translate(-10px);
+  }
 }

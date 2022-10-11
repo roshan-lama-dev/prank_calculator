@@ -151,5 +151,5 @@ const total = () => {
 const randomNumber = () => {
   const num = Math.round(Math.random() * 10);
   //   less than three return 3 other wise return 0
-  return num < 10 ? num : 0;
+  return num < 0 ? num : 0;
 };
